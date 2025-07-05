@@ -10,7 +10,9 @@ ESP-AirEco is a scalable, real-time air monitoring eco-system built using two ES
 - 📲 **Mobile App Alerts** via Blynk Cloud
 - 🔔 **Buzzer Alert** when gas levels are high
 - 🖥️ **OLED Display** for real-time values
--
+- 📡 **ESP-NOW Wireless Communication** between sensor node and main node
+- ⚡ **Low Power & Scalable**: add more sensor nodes in future
+- 
 
 
 
