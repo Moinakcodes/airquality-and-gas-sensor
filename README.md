@@ -34,6 +34,25 @@ ESP-AirEco is a scalable, real-time air monitoring eco-system built using two ES
 | **Power** | 5V via USB or regulated source |
 | **Connectivity** | Wi-Fi for Blynk + ESP-NOW for local node |
 
+ 🚧 Challenges Faced
+
+1. **ESP-NOW and Wi-Fi Conflict**
+   - Resolved by using `WIFI_AP_STA` mode
+
+2. **Sensor Calibration**
+   - Raw analog values needed adjustment as sensor data changes according to  environment
+    
+
+3. **OLED Flicker**
+   - Solved using proper `clearDisplay()` and update delays
+
+4. **Notification Spam**
+   - Controlled repeated event triggering using debounce logic
+
+5. **Stable Power Supply**
+   - Prevented sensor errors with decoupling capacitors
+
+
 
 
 
