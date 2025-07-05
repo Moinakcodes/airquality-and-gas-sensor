@@ -16,6 +16,9 @@ void setup() {
   esp_now_init();
   esp_now_add_peer(broadcastAddress, ESP_NOW_ROLE_SLAVE, 1, NULL, 0);
 }
-
+void loop() {
+  msg.gasValue = analogRead(MQ6_PIN);
+  esp_now_send(broadcastAddress, (uint8_t *)&msg, sizeof(msg));
+  delay(2000);
 
 }
