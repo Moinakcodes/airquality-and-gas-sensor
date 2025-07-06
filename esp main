@@ -26,5 +26,5 @@ typedef struct struct_message
 } 
 struct_message;
 
-struct_message incomingMsg;
+
 
