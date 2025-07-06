@@ -23,4 +23,8 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 typedef struct struct_message
 {
   int gasValue;
+} 
+struct_message;
+
+struct_message incomingMsg;
 
