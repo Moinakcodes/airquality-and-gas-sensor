@@ -25,6 +25,8 @@ typedef struct struct_message
   int gasValue;
 } 
 struct_message;
+struct_message incomingMsg;
 
+void OnDataRecv(const uint8_t *mac, const uint8_t *incomingData, int len)
 
 
