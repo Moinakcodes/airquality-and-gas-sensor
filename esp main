@@ -11,3 +11,6 @@
 #define SCREEN_ADDRESS 0x3C
 #define DHTPIN 4
 #define DHTTYPE DHT22
+#define MQ135_PIN 35
+#define IR_PIN 32
+#define BUZZER_PIN 2
