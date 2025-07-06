@@ -14,3 +14,9 @@
 #define MQ135_PIN 35
 #define IR_PIN 32
 #define BUZZER_PIN 2
+
+char auth[] = "Blynk_Auth_Token";   
+char ssid[] = "WiFi_SSID";
+char pass[] = "Moinakxd05";
+
+
