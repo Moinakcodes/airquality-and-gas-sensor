@@ -66,3 +66,7 @@ int lpg = incomingMsg.gasValue;
   Blynk.virtualWrite(V3, lpg);
  if (ir == LOW) {
     Blynk.logEvent("motion_alert", "Motion Detected!");
+
+ display.clearDisplay();
+  display.setCursor(0, 0);
+  display.print("Air (MQ135): "); display.println(airQuality);
