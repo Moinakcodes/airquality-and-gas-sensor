@@ -59,3 +59,5 @@ void loop() {
   float temp = dht.readTemperature();
 float hum = dht.readHumidity();
   int ir = digitalRead(IR_PIN);
+int lpg = incomingMsg.gasValue;
+  Blynk.virtualWrite(V0, airQuality);
