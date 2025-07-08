@@ -55,3 +55,5 @@ esp_now_init();
 }
 void loop() {
   Blynk.run();
+ int airQuality = analogRead(MQ135_PIN);
+  float temp = dht.readTemperature();
