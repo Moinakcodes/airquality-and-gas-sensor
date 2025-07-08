@@ -57,3 +57,5 @@ void loop() {
   Blynk.run();
  int airQuality = analogRead(MQ135_PIN);
   float temp = dht.readTemperature();
+float hum = dht.readHumidity();
+  int ir = digitalRead(IR_PIN);
