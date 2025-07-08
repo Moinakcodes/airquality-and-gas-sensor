@@ -61,3 +61,6 @@ float hum = dht.readHumidity();
   int ir = digitalRead(IR_PIN);
 int lpg = incomingMsg.gasValue;
   Blynk.virtualWrite(V0, airQuality);
+ Blynk.virtualWrite(V1, temp);
+  Blynk.virtualWrite(V2, hum);
+  Blynk.virtualWrite(V3, lpg);
