@@ -76,3 +76,5 @@ display.println(" C");
   display.print("Hum : ");
  display.print("Hum : "); display.print(hum); display.println(" %");
 
+display.print("LPG  : "); display.println(lpg);
+  display.display();
