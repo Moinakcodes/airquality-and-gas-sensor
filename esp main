@@ -31,4 +31,7 @@ void OnDataRecv(const uint8_t *mac, const uint8_t *incomingData, int len)
  memcpy(&incomingMsg, incomingData, sizeof(incomingMsg));
   Serial.print("LPG Sensor Value: ");
   Serial.println(incomingMsg.gasValue);
-
+  if (incomingMsg.gasValue > 500) 
+{
+  Blynk.logEvent("gas_alert", "LPG Level High!");
+  digitalWrite(BUZZER_PIN, HIGH);
