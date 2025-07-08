@@ -39,10 +39,17 @@ void OnDataRecv(const uint8_t *mac, const uint8_t *incomingData, int len)
     digitalWrite(BUZZER_PIN, LOW);
   }
 }
-void setup() {
+void setup()
+{
   Serial.begin(115200);
   pinMode(IR_PIN, INPUT);
   pinMode(BUZZER_PIN, OUTPUT);
   dht.begin();
+  WiFi.begin(ssid, pass);
+  Blynk.begin(auth, ssid, pass);
 
+  WiFi.mode(WIFI_AP_STA);
  
+esp_now_init();
+  esp_now_register_recv_cb(OnDataRecv);
+}
