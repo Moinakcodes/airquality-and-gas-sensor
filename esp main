@@ -53,3 +53,5 @@ void setup()
 esp_now_init();
   esp_now_register_recv_cb(OnDataRecv);
 }
+void loop() {
+  Blynk.run();
