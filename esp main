@@ -35,3 +35,7 @@ void OnDataRecv(const uint8_t *mac, const uint8_t *incomingData, int len)
 {
   Blynk.logEvent("gas_alert", "LPG Level High!");
   digitalWrite(BUZZER_PIN, HIGH);
+} else {
+    digitalWrite(BUZZER_PIN, LOW);
+  }
+}
