@@ -28,5 +28,7 @@ struct_message;
 struct_message incomingMsg;
 
 void OnDataRecv(const uint8_t *mac, const uint8_t *incomingData, int len)
-
+ memcpy(&incomingMsg, incomingData, sizeof(incomingMsg));
+  Serial.print("LPG Sensor Value: ");
+  Serial.println(incomingMsg.gasValue);
 
