@@ -64,3 +64,5 @@ int lpg = incomingMsg.gasValue;
  Blynk.virtualWrite(V1, temp);
   Blynk.virtualWrite(V2, hum);
   Blynk.virtualWrite(V3, lpg);
+ if (ir == LOW) {
+    Blynk.logEvent("motion_alert", "Motion Detected!");
