@@ -72,6 +72,7 @@ int lpg = incomingMsg.gasValue;
   display.print("Air (MQ135): "); 
 display.println(airQuality);
  display.print("Temp: "); 
-display.print(temp); 
 display.println(" C");
+  display.print("Hum : ");
+ display.print("Hum : "); display.print(hum); display.println(" %");
 
